@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerUsoLayouts_RomelGualoto.GridPage"
+             Title="Grid Layout">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Primer cuadrante -->
+        <BoxView Grid.Row="0" Grid.Column="0" Color="Red" />
+
+        <!-- Segundo cuadrante -->
+        <BoxView Grid.Row="0" Grid.Column="1" Color="Blue" />
+
+        <!-- Tercer cuadrante -->
+        <BoxView Grid.Row="1" Grid.Column="0" Color="Green" />
+
+        <!-- Cuarto cuadrante con el botón -->
+        <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow">
+            <Button Text="Ir a StackLayout" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Clicked="GoToStackLayout" />
+        </Grid>
+    </Grid>
+</ContentPage>
