@@ -1,9 +1,15 @@
 namespace TallerUsoLayouts_RomelGualoto;
 
-public partial class NewPage1 : ContentPage
+public partial class AbsolutePage : ContentPage
 {
-	public NewPage1()
-	{
-		InitializeComponent();
-	}
+    public AbsolutePage()
+    {
+        InitializeComponent();
+    }
+
+    private async void GoToGridLayout(object sender, EventArgs e)
+    {
+        // Navega a la página GridPage
+        await Navigation.PushAsync(new GridPage());
+    }
 }
